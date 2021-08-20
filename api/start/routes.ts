@@ -1,5 +1,5 @@
 import Route from '@ioc:Adonis/Core/Route'
-import TestRoute from './Routes/test'
+import UsersController from 'App/Controllers/Http/UsersController'
 import showCours from './Routes/cours'
 import newUser from './Routes/newUser'
 import displayusers from './Routes/displayusers'
@@ -8,7 +8,9 @@ Route.get('/', async () => {
   return { hello: 'jojo v10' }
 })
 
-Route.get('/test', TestRoute)
+/* User controllers */
+Route.get('users', 'UsersController.get')
+Route.post('users', 'UsersController.post')
 
 Route.get('/cours', showCours)
 

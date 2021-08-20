@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Work+Sans&display=swap');
+
+body {
+  font-family:  'Work Sans', sans-serif;
+  background-color: #E5E5E5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* FONTS */
+/*  Work Sans, Cousine 'Cousine', monospace;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NavBar Component */ 
+
+nav {
+  background-color: #57496E;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul{
+  display: inherit;
+  flex-direction: row;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav li {
+  padding: 15px;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*  --NavBar Component */ 
+
+/* Content Wrapper */ 
+.wrapper-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/* Course Button Component */
+
+.course-btn {
+  background-color: #7C689B;
+  max-width: 386px;
+  min-width: 300px;
+  height: 107px;
+  margin: 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+.gris {
+  background-color: #EEEEEE;
+  color: #999999
+}
+.course-btn h1 {
+  margin: 30px auto 0 30px;
+  font-family: Cousine;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  opacity: 0.50;
+}
+.course-btn h2 {
+  margin: 11px 0 30px 30px;
+  font-family: 'Work Sans', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
 }

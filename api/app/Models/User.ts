@@ -3,7 +3,7 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
 
 export default class User extends BaseModel {
   @column({ isPrimary: true })
-  public id: string
+  public id: string | null
 
   @column()
   public email: string
@@ -24,10 +24,10 @@ export default class User extends BaseModel {
   public info: string
 
   @column.dateTime({ autoCreate: true })
-  public creationDate: DateTime
+  public createdAt: DateTime
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
-  public updateAt: DateTime
+  public updatedAt: DateTime
 }
 
 /* Define a custom database table name.

@@ -1,0 +1,1 @@
+node ace make:migration courses &&  node ace make:migration users && node ace make:migration  steps && node ace make:migration reviews && node ace make:migration  roles
